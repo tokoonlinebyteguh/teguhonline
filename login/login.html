@@ -7,34 +7,25 @@
 </head>
 <body>
 	<div>
-		<div>
-			<h2>LOGIN</h2>
-			<div>
-				
+		<h1>Login</h1>
+		<form method="post">
+			<div class="txt_field">
+				<input type="text" required id="label1">
+				<label for="label1">username</label>
 			</div>
-		</div>
-		<div>
-			<form action="">
-				<label for="email">
-					Email
-				</label>
-				<input type="email" id="email" autocomplete="on" required/>
 
-				<label for="password">
-					&nbsp; password
-				</label>
-				<input type="password" id="password" name="password" required>
+			<div>
+				<input type="password" required id="label2">
+				<label for="label2">Password</label>
+			</div>
 
-				<a href="lupapassword.html">
-					<legend id="lupapasword">lupa password?</legend>
-				</a>
+			<div class="pass"><a href="lupapassword.html">Lupa password?</a></div>
+			<input type="submit" value="Login">
 
-				<input type="submit" id="submit" name="submit" value="login">
-
-				<a href="resetpassword.html">Reset password</a>
-			</form>
-		</div>
+			<div class="signup_link">
+				reset password <a href="resetpassword.html">klik</a>
+			</div>
+		</form>
 	</div>
-	
 </body>
 </html>
