@@ -6,12 +6,16 @@
 	<title>Produk saya</title>
 
 	<style>
+
+		h1 {
+			font-family: arial black;
+		}
 		.produk{
 			display: flex;
 			flex-wrap: wrap;
 		}
 
-		.item{
+		.item {
 			width: 150px;
 			height: 200px;
 			background-color: lightsteelblue;
@@ -20,26 +24,62 @@
 			border: solid 1px salmon ;
 			border-radius: 5px;
 			text-align: center;
+			font-family: arial black;
+		}
+
+		.item h2{
+			font-size: 11px;
+		}
+
+		.item a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.link a {
+			text-decoration: none;
+			background: salmon;
+			color: whitesmoke;
+			padding: 5px;
+			border-radius: 10px;
 		}
 	</style>
 </head>
 <body>
 	<h1>Produk saya</h1>
+	<div class="link">
+		<p>
+			<a href="#" onclick="history.go(-1)">kembali</a>
 
-	<p><a href="#" onclick="history.go(-1)">kembali</a>
+			<a href="tambah_produk.html">Tambah produk</a>
 
-		<a href="tambah_produk.html">Tambah produk</a>
-	</p>
-
+			<a href="promo_produk.html">promo produk</a>
+		</p>
+	</div>
 	<div class="produk">
-		<div class="item">produk1</div>
-		<div class="item">produk2</div>
-		<div class="item">produk3</div>
-		<div class="item">produk4</div>
-		<div class="item">produk5</div>
-		<div class="item">produk6</div>
-		<div class="item">produk7</div>
-		<div class="item">produk8</div>
+		<div class="item">
+			<a href="">
+				<img src='https://i.postimg.cc/DzfK6R3N/enak.png' border='0' alt='enak'/></a>
+			</a>
+			<a href=""><h2>KUE MANGKUK</h2></a>
+			<a href="">RP.4000</a>
+		</div>
+
+		<div class="item">
+			<a href="">
+				<img src='https://i.postimg.cc/cCJJg6XF/foto.png' border='0' alt='foto'/ style="margin-top: 36px;"></a>
+			</a>
+			<a href=""><h2>DONUT</h2></a>
+			<a href="">RP.6000</a>
+		</div>
+		<div class="item">
+			<a href="">
+				<img src='https://i.postimg.cc/43ByJz1Y/lezat.png' border='0' alt='lezat'/ style="margin-top: 19px;"></a>
+			</a>
+			<a href=""><h2>KUE TART</h2></a>
+			<a href="">RP.170000</a>
+		</div>
+		
 	</div>
 	
 </body>
