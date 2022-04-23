@@ -6,41 +6,117 @@
 	<title>Tambah produk</title>
 
 	<style>
-		input[type=text], select, textarea {
-			width: 100%;
+		textarea {
+			border-radius: 10px;
+			border-style: hidden;
 		}
+		body {
+			background: linear-gradient(#F9957f, #f2f5d0);
+			
+		}
+
+		h1 {
+			font-family: arial black;
+		}
+
+		a {
+			text-decoration: none;
+			background: lightskyblue;
+			color: salmon;
+			padding: 5px;
+			border-radius: 10px;
+			font-family: arial;
+		}
+		button {
+			padding: 5px;
+			height: ;
+			width: 100px;
+			border-radius: 10px;
+			font-family: arial;
+		}
+
+		select {
+			padding: 6.5px;
+			border-radius: 10px;
+			font-family: montserrat, sans-serif;
+		}
+
+		.tmbh_produk {
+			padding: 10px;
+			font-family: arial;
+		}
+
+		input {
+			border-radius: 10px;
+			font-family: arial;
+		}
+
+		.label {
+			font-family: montserrat, sans-serif;
+			font-weight: bold;
+		}
+
+		hr	{
+			border-style: double;
+			bo
+		}
+
+		.pp {
+			font-family: arial black;
+		}
+
 	</style>
 </head>
 <body>
-	<h1>Produk saya</h1>
+	<h1>Tambah Produk</h1>
 
 	<p><a href="#" onclick="history.go(-1)">kembali</a>
 
-		<a href="../../index.html">home</a>
+		<a href="../index.html">home</a>
 	</p>
 
 	<div id="tmbh_produk">
 		Nama produk <br>
-		<input type="text" name="">
+		<input type="text" name="" class="tau">
+	</div>
 
 		<br>
-		jenis produk <br>
-		<select>
-			<option value="">produk1</option>
-			<option value="">produk2</option>
-			<option value="">produk3</option>
-			<option value="">lainnya</option>
-		</select>
+		<div>
+			jenis produk 
+			<br>
+		    <select>
+				<option value="">nastar</option>
+				<option value="">brownis</option>
+				<option value="">donut</option>
+				<option value="">lainnya</option>
+		    </select>
+		</div>
 
-		<br>Netto
+		<div>
+			<label for="nohp">harga</label>
+			<br>
+			<input type="text" id="nohp">
+		</div>
+
+		<div class="pp">
+			<label for="text">Deskripsi</label>
+			<br>
+		    <textarea name="" id="text" cols="30" rows="10"></textarea>
+		</div>
+
+		<br>
+		
+		<div class="label">
+			Netto
 		<label for="">
 			<br><input type="radio" name="netto">
-		50gr
+		ukuran kecil
 		<br><input type="radio" name="netto">
-		100gr
+		ukuran sedang
 		<br><input type="radio" name="netto">
-		250gr
+		ukuran besar
 		</label>
+		</div>
 
 		<hr>
 		<button>submit</button>
